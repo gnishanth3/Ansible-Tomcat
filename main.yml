@@ -9,8 +9,8 @@
     - name: install wget 
       yum: install wget
     - name: change directory
-      command:cd /usr/share/tomcat/webapps
+      command: cd /usr/share/tomcat/webapps
     - name: copy war file to webapps
-      command:wget https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war   
+      command: wget https://osdn.net/frs/redir.php?m=aarnet&f=pal%2F17479%2Fhelloworld.war  
     - name: start tomcat
       service: name=tomcat state=started 
