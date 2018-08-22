@@ -6,5 +6,11 @@
       yum: name=java update_cache=yes state=latest
     - name: install tomcat
       yum: name=tomcat state=latest
+    - name: install wget 
+      yum: install wget
+    - name: change directory
+      command:cd /usr/share/tomcat/webapps
+    - name: copy war file to webapps
+      command:wget https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war   
     - name: start tomcat
       service: name=tomcat state=started 
