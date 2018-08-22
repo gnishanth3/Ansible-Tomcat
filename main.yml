@@ -13,9 +13,9 @@
     - name: rpm extract
       command: sudo rpm -ivh jdk-8u131-linux-x64.rpm
     - name: download tomcat
-      command: wget http://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.32/bin/apache-tomcat-8.5.32-windows-x64.zip
+      command: wget http://www-eu.apache.org/dist/tomcat/tomcat-8/v8.5.33/bin/apache-tomcat-8.5.33.zip
     - name: unzip tomcat
-      command: unzip apache-tomcat-8.5.32-windows-x64.zip
+      command: unzip apache-tomcat-8.5.33.zip
     - name: move tomcat to opt directory
       command: mv apache-tomcat-8.5.32 /opt/tomcat
     - name: update permissions
