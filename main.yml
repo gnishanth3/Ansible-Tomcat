@@ -1,0 +1,10 @@
+---
+- hosts: webservers
+  sudo: yes
+  tasks:
+    - name: install java
+      yum: name=java update_cache=yes state=latest
+    - name: install tomcat
+      yum: name=tomcat state=latest
+    - name: start tomcat
+      service: name=tomcat state=started 
