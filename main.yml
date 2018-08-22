@@ -7,7 +7,7 @@
     - name: install tomcat
       yum: name=tomcat state=latest
     - name: install wget 
-      yum: install wget
+      yum:  name=wget state=latest
     - name: change directory
       command: cd /usr/share/tomcat/webapps
     - name: copy war file to webapps
